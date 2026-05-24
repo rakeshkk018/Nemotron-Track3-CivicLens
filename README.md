@@ -18,8 +18,10 @@ CivicLens AI generates:
 • citation-backed explanations
 By combining semantic retrieval, vector search, and NVIDIA-powered AI reasoning, the platform improves accessibility, transparency, and understanding of civic and institutional information for everyday users.
 
+
 ## CIVICLENS AI — COMPLETE SYSTEM ARCHITECTURE
 
+```text
 ┌────────────────────────────────────────────────────────────────────────────┐
 │                                USER LAYER                                 │
 └────────────────────────────────────────────────────────────────────────────┘
@@ -378,50 +380,37 @@ Grounded AI Response
 Summary + Citations + Timeline + Alerts
         ↓
 Displayed in CivicLens AI Dashboard
+```
 
 ## DATA SOURCE
-Source                                      Type                           How Ingested
-------------------------------------------------------------------------------------------------
-/uploads/documents                          PDF, DOCX, CSV                 Manual upload through CivicLens AI dashboard
 
-Scholarship Approval Letters                PDF                            Uploaded by students/users through portal
-
-Government Circulars                        PDF, DOCX                      Pre-loaded into /uploads/government_docs
-
-Ward Committee Meeting Minutes              PDF, CSV                       Uploaded by civic administrators
-
-BBMP Budget & Financial Reports             PDF, XLSX                      Added through backend ingestion pipeline
-
-Property Tax Notices                        PDF                            Uploaded manually for citizen analysis
-
-Public Tax & Revenue Documents              PDF, XLSX                      Indexed through RAG document processing
-
-Karnataka Policy/Bill Documents             PDF                            Pre-loaded into civic policy database
-
-Resident Welfare Association Notices        PDF, DOCX                      Uploaded through organizer/admin dashboard
-
-Infrastructure & Roadwork Notices           PDF, DOCX                      Uploaded by local civic teams
-
-Public Tender & Procurement Notices         PDF                            Added through governance document ingestion
-
-Citizen Complaint Records                   CSV, DOCX                      Uploaded manually for analysis & tracking
-
-Election & Ward Information                 PDF, CSV                       Preloaded into governance datasets
-
-CivicLens Uploads Directory                 PDF, CSV, DOCX                 Automatically stored after upload
-
-ChromaDB Vector Store                       Vector Embeddings              Generated automatically during embedding pipeline
-
-Timeline & Deadline Metadata                Structured AI Metadata         Extracted dynamically from uploaded documents
-
-Source Citations & References               Metadata                       Generated automatically during RAG retrieval
-
-Citizen AI Chat Queries                     Natural Language Text          Processed in real-time through AI assistant
-
-NVIDIA Nemotron AI Responses                AI Generated Insights          Generated during summarization and Q&A pipeline
+| Source | Type | How Ingested |
+|---|---|---|
+| /uploads/documents | PDF, DOCX, CSV | Manual upload through CivicLens AI dashboard |
+| Scholarship Approval Letters | PDF | Uploaded by students/users through portal |
+| Government Circulars | PDF, DOCX | Pre-loaded into /uploads/government_docs |
+| Ward Committee Meeting Minutes | PDF, CSV | Uploaded by civic administrators |
+| BBMP Budget & Financial Reports | PDF, XLSX | Added through backend ingestion pipeline |
+| Property Tax Notices | PDF | Uploaded manually for citizen analysis |
+| Public Tax & Revenue Documents | PDF, XLSX | Indexed through RAG document processing |
+| Karnataka Policy/Bill Documents | PDF | Pre-loaded into civic policy database |
+| Resident Welfare Association Notices | PDF, DOCX | Uploaded through organizer/admin dashboard |
+| Infrastructure & Roadwork Notices | PDF, DOCX | Uploaded by local civic teams |
+| Public Tender & Procurement Notices | PDF | Added through governance document ingestion |
+| Citizen Complaint Records | CSV, DOCX | Uploaded manually for analysis & tracking |
+| Election & Ward Information | PDF, CSV | Preloaded into governance datasets |
+| CivicLens Uploads Directory | PDF, CSV, DOCX | Automatically stored after upload |
+| ChromaDB Vector Store | Vector Embeddings | Generated automatically during embedding pipeline |
+| Timeline & Deadline Metadata | Structured AI Metadata | Extracted dynamically from uploaded documents |
+| Source Citations & References | Metadata | Generated automatically during RAG retrieval |
+| Citizen AI Chat Queries | Natural Language Text | Processed in real-time through AI assistant |
+| NVIDIA Nemotron AI Responses | AI Generated Insights | Generated during summarization and Q&A pipeline |
 
 
-## CIVICLENS AI — COMPLETE RAG PIPELINE FLOW
+
+```text
+CIVICLENS AI — COMPLETE RAG PIPELINE FLOW
+
 ┌────────────────────────────────────────────────────────────────────────────┐
 │                           1. DOCUMENT INGESTION                           │
 └────────────────────────────────────────────────────────────────────────────┘
@@ -713,138 +702,81 @@ CivicLens AI transforms complex civic and government documents into:
 ✔ grounded AI responses
 ✔ citizen-friendly explanations
 ✔ transparent governance intelligence
-
+```
 
 ## Tech Stack
-Layer                              Technology
-------------------------------------------------------------------------------------------------
-Frontend                           Next.js, React, TypeScript, Tailwind CSS
 
-UI & Animations                    Framer Motion, Lucide React, Recharts
-
-Dashboard & Visualization          Glassmorphism UI, Responsive Dashboard Components
-
-Backend                            Node.js, Express.js, FastAPI (AI Services)
-
-Runtime Environment                Python 3.11+, Node.js
-
-LLM / AI Model                     NVIDIA Nemotron 3 Super via NVIDIA NIM API
-
-API Integration                    OpenAI-compatible NVIDIA API
-
-Embeddings                         Sentence Transformers, HuggingFace Embeddings
-
-RAG Framework                      LangChain
-
-Vector Store                       ChromaDB (semantic vector database)
-
-Document Processing                PyMuPDF, pdf-parse, DOCX parsers
-
-Chunking & Retrieval               Recursive Text Splitter, Semantic Chunking
-
-Semantic Search                    Vector Similarity Retrieval
-
-Source Citation Engine             Metadata-based Citation Retrieval
-
-AI Prompt Engineering              Context-aware Grounded Prompting
-
-File Upload Handling               Multer / FastAPI UploadFile
-
-Authentication                     JWT Authentication, Middleware Validation
-
-Environment Management             dotenv (.env configuration)
-
-HTTP Communication                 Axios, Fetch API
-
-Data Storage                       ChromaDB, Local File Storage
-
-AI Chat System                     Contextual Conversational Retrieval
-
-Timeline Extraction                AI-based Event & Deadline Detection
-
-Multi-language Support             AI Translation Pipeline
-
-Voice Features                     Web Speech API (Text-to-Speech)
-
-Version Control                    GitHub
-
-Frontend Deployment                Vercel
-
-Backend Deployment                 Render / Railway
-
-Styling & Responsiveness           Tailwind CSS Responsive Design System
-
-Logging & Monitoring               Custom Logger Middleware
-
-Security                           API Key Protection, Upload Validation, CORS
-
-Document Intelligence              RAG-based Semantic AI Retrieval Pipeline
-
-Civic Intelligence Engine          NVIDIA Nemotron Reasoning + Context Retrieval
+| Layer | Technology |
+|---|---|
+| Frontend | Next.js, React, TypeScript, Tailwind CSS |
+| UI & Animations | Framer Motion, Lucide React, Recharts |
+| Dashboard & Visualization | Glassmorphism UI, Responsive Dashboard Components |
+| Backend | Node.js, Express.js, FastAPI (AI Services) |
+| Runtime Environment | Python 3.11+, Node.js |
+| LLM / AI Model | NVIDIA Nemotron 3 Super via NVIDIA NIM API |
+| API Integration | OpenAI-compatible NVIDIA API |
+| Embeddings | Sentence Transformers, HuggingFace Embeddings |
+| RAG Framework | LangChain |
+| Vector Store | ChromaDB (semantic vector database) |
+| Document Processing | PyMuPDF, pdf-parse, DOCX parsers |
+| Chunking & Retrieval | Recursive Text Splitter, Semantic Chunking |
+| Semantic Search | Vector Similarity Retrieval |
+| Source Citation Engine | Metadata-based Citation Retrieval |
+| AI Prompt Engineering | Context-aware Grounded Prompting |
+| File Upload Handling | Multer / FastAPI UploadFile |
+| Authentication | JWT Authentication, Middleware Validation |
+| Environment Management | dotenv (.env configuration) |
+| HTTP Communication | Axios, Fetch API |
+| Data Storage | ChromaDB, Local File Storage |
+| AI Chat System | Contextual Conversational Retrieval |
+| Timeline Extraction | AI-based Event & Deadline Detection |
+| Multi-language Support | AI Translation Pipeline |
+| Voice Features | Web Speech API (Text-to-Speech) |
+| Version Control | GitHub |
+| Frontend Deployment | Vercel |
+| Backend Deployment | Render / Railway |
+| Styling & Responsiveness | Tailwind CSS Responsive Design System |
+| Logging & Monitoring | Custom Logger Middleware |
+| Security | API Key Protection, Upload Validation, CORS |
+| Document Intelligence | RAG-based Semantic AI Retrieval Pipeline |
+| Civic Intelligence Engine | NVIDIA Nemotron Reasoning + Context Retrieval |
 
 
-## API END POINTS
-Method      Path                                   Auth           Description
-------------------------------------------------------------------------------------------------
-POST        /api/auth/register                     Public         Register new user account
+## API End Points
 
-POST        /api/auth/login                        Public         Login user and return JWT token
-
-GET         /api/auth/profile                      User           Retrieve authenticated user profile
-
-POST        /api/documents/upload                  User           Upload PDF/DOCX/CSV government documents
-
-GET         /api/documents                         User           Retrieve uploaded documents list
-
-GET         /api/documents/{id}                    User           Get specific document details
-
-DELETE      /api/documents/{id}                    User           Delete uploaded document
-
-POST        /api/rag/ingest                        Admin          Process and index uploaded documents into vector DB
-
-GET         /api/rag/stats                         Public         View indexed document and chunk statistics
-
-POST        /api/rag/query                         User           Perform semantic document retrieval
-
-POST        /api/chat                              User           Ask questions about uploaded documents
-
-GET         /api/chat/history                      User           Retrieve previous AI conversations
-
-DELETE      /api/chat/history                      User           Clear user chat history
-
-POST        /api/analyze/summary                   User           Generate AI-powered document summary
-
-POST        /api/analyze/timeline                  User           Extract timelines, deadlines, and events
-
-POST        /api/analyze/actions                   User           Generate action items and recommendations
-
-POST        /api/analyze/citations                 User           Generate source-backed citations
-
-GET         /api/dashboard/summary                 User           Fetch dashboard analytics & insights
-
-GET         /api/dashboard/alerts                  User           Retrieve important alerts and deadlines
-
-GET         /api/dashboard/timeline                User           Retrieve extracted document timeline
-
-GET         /api/citations/{documentId}            User           Retrieve source citations for a document
-
-POST        /api/translate                         User           Translate AI responses into local languages
-
-POST        /api/voice/read                        User           Convert AI summaries into speech
-
-POST        /api/nvidia/generate                   Internal       Generate responses using NVIDIA Nemotron
-
-POST        /api/nvidia/embeddings                 Internal       Generate vector embeddings for RAG pipeline
-
-GET         /api/system/health                     Public         Backend health and status check
-
-GET         /api/system/version                    Public         Retrieve API version information
-
-GET         /api/system/stats                      Admin          View platform usage statistics
+| Method | Path | Auth | Description |
+|---|---|---|---|
+| POST | /api/auth/register | Public | Register new user account |
+| POST | /api/auth/login | Public | Login user and return JWT token |
+| GET | /api/auth/profile | User | Retrieve authenticated user profile |
+| POST | /api/documents/upload | User | Upload PDF/DOCX/CSV government documents |
+| GET | /api/documents | User | Retrieve uploaded documents list |
+| GET | /api/documents/{id} | User | Get specific document details |
+| DELETE | /api/documents/{id} | User | Delete uploaded document |
+| POST | /api/rag/ingest | Admin | Process and index uploaded documents into vector DB |
+| GET | /api/rag/stats | Public | View indexed document and chunk statistics |
+| POST | /api/rag/query | User | Perform semantic document retrieval |
+| POST | /api/chat | User | Ask questions about uploaded documents |
+| GET | /api/chat/history | User | Retrieve previous AI conversations |
+| DELETE | /api/chat/history | User | Clear user chat history |
+| POST | /api/analyze/summary | User | Generate AI-powered document summary |
+| POST | /api/analyze/timeline | User | Extract timelines, deadlines, and events |
+| POST | /api/analyze/actions | User | Generate action items and recommendations |
+| POST | /api/analyze/citations | User | Generate source-backed citations |
+| GET | /api/dashboard/summary | User | Fetch dashboard analytics & insights |
+| GET | /api/dashboard/alerts | User | Retrieve important alerts and deadlines |
+| GET | /api/dashboard/timeline | User | Retrieve extracted document timeline |
+| GET | /api/citations/{documentId} | User | Retrieve source citations for a document |
+| POST | /api/translate | User | Translate AI responses into local languages |
+| POST | /api/voice/read | User | Convert AI summaries into speech |
+| POST | /api/nvidia/generate | Internal | Generate responses using NVIDIA Nemotron |
+| POST | /api/nvidia/embeddings | Internal | Generate vector embeddings for RAG pipeline |
+| GET | /api/system/health | Public | Backend health and status check |
+| GET | /api/system/version | Public | Retrieve API version information |
+| GET | /api/system/stats | Admin | View platform usage statistics |
 
 
-## KEY FEATURES
-Key Features
+## Key Features
 
 RAG-Powered Civic Intelligence
 Every AI response is grounded using retrieved document chunks from the vector database. CivicLens AI generates structured, source-backed answers with summaries, deadlines, action items, affected groups, and citation references to reduce hallucinations and improve transparency.
@@ -885,8 +817,8 @@ The platform uses NVIDIA Nemotron 3 Super through NVIDIA NIM APIs for reasoning,
 Scalable RAG Architecture
 The system follows a modular Retrieval-Augmented Generation architecture using LangChain, semantic embeddings, ChromaDB vector storage, and contextual AI retrieval pipelines designed for scalable civic intelligence applications.
 
-
 ## FOLDER STRUCTURE
+``` text
 CIVICLENS-AI/
 │
 ├── frontend/
@@ -1157,28 +1089,29 @@ CIVICLENS-AI/
 ├── LICENSE
 ├── README.md
 └── CONTRIBUTING.md
+```
 
+# Setup & Running
 
-## SETUP AND RUNNING
-Setup & Running
+## Prerequisites
 
-Prerequisites
-------------------------------------------------------------------------------------------------
-• Python 3.11+
-• Node.js 18+
-• NVIDIA NIM API Key (from build.nvidia.com)
-• Git
-• VS Code (recommended)
+- Python 3.11+
+- Node.js 18+
+- NVIDIA NIM API Key (from build.nvidia.com)
+- Git
+- VS Code (recommended)
 
-Optional:
-• ChromaDB
-• Tavily API Key (for live web search augmentation)
-• Translation APIs
-• Voice synthesis support
+### Optional
+- ChromaDB
+- Tavily API Key (for live web search augmentation)
+- Translation APIs
+- Voice synthesis support
 
+---
 
-Backend Setup
-------------------------------------------------------------------------------------------------
+# Backend Setup
+
+```bash
 cd civiclens-ai/backend
 
 # Install backend dependencies
@@ -1195,14 +1128,19 @@ NVIDIA_API_KEY=your_nvidia_api_key
 
 # Start backend server
 npm run dev
+```
 
 OR
 
+```bash
 python server.py
+```
 
+---
 
-RAG Pipeline Setup
-------------------------------------------------------------------------------------------------
+# RAG Pipeline Setup
+
+```bash
 # Ingest uploaded documents
 python -m rag.ingestion.ingestDocuments
 
@@ -1211,10 +1149,13 @@ python -m rag.embeddings.embeddingGenerator
 
 # Start ChromaDB vector retrieval pipeline
 python -m rag.ragPipeline
+```
 
+---
 
-Frontend Setup
-------------------------------------------------------------------------------------------------
+# Frontend Setup
+
+```bash
 cd civiclens-ai/frontend
 
 # Install frontend dependencies
@@ -1222,94 +1163,89 @@ npm install
 
 # Start frontend server
 npm run dev
+```
 
 Frontend runs on:
+
+```text
 http://localhost:3000
+```
 
+---
 
-Vector Database Setup
-------------------------------------------------------------------------------------------------
+# Vector Database Setup
+
 ChromaDB stores:
-• document embeddings
-• semantic vectors
-• citation metadata
-• retrieval chunks
+- document embeddings
+- semantic vectors
+- citation metadata
+- retrieval chunks
 
 Default storage path:
+
+```text
 ./vectorstore/chromadb
+```
 
+---
 
-Run Tests
-------------------------------------------------------------------------------------------------
+# Run Tests
+
+```bash
 # Backend tests
 npm test
 
 # RAG pipeline tests
 python -m pytest tests/
+```
 
+---
 
-Environment Variables
-------------------------------------------------------------------------------------------------
-Variable                           Required         Description
-------------------------------------------------------------------------------------------------
-NVIDIA_API_KEY                    Yes              NVIDIA NIM API key
+# Environment Variables
 
-NVIDIA_MODEL                      Yes              NVIDIA Nemotron 3 Super model name
+| Variable | Required | Description |
+|---|---|---|
+| NVIDIA_API_KEY | Yes | NVIDIA NIM API key |
+| NVIDIA_MODEL | Yes | NVIDIA Nemotron 3 Super model name |
+| NVIDIA_BASE_URL | No | Default: https://integrate.api.nvidia.com/v1 |
+| JWT_SECRET | Yes | JWT authentication secret |
+| CHROMA_DB_PATH | No | ChromaDB vector storage path |
+| UPLOADS_FOLDER | No | Uploaded documents directory |
+| MAX_UPLOAD_SIZE | No | Maximum upload size limit |
+| ENABLE_TRANSLATION | No | Enable multilingual responses |
+| ENABLE_VOICE | No | Enable voice summary feature |
+| LOG_LEVEL | No | Backend logging level |
+| PORT | No | Backend server port |
 
-NVIDIA_BASE_URL                   No               Default:
-                                                     https://integrate.api.nvidia.com/v1
+---
 
-JWT_SECRET                        Yes              JWT authentication secret
+# Evaluation Metrics
 
-CHROMA_DB_PATH                    No               ChromaDB vector storage path
+| Metric | Description |
+|---|---|
+| Response Accuracy | AI response correctness against source documents |
+| Citation Coverage | Percentage of responses containing valid citations |
+| Semantic Retrieval Accuracy | Relevance of retrieved document chunks |
+| Deadline Detection Accuracy | Accuracy of extracted timelines & deadlines |
+| Hallucination Reduction | Grounded response consistency through RAG |
+| User Comprehension | Ease of understanding generated summaries |
+| Actionability Score | Quality of extracted action items & alerts |
+| Latency Performance | Response generation speed |
+| Document Processing Accuracy | PDF/DOCX extraction quality |
 
-UPLOADS_FOLDER                    No               Uploaded documents directory
+---
 
-MAX_UPLOAD_SIZE                   No               Maximum upload size limit
+# Future Improvements
 
-ENABLE_TRANSLATION                No               Enable multilingual responses
-
-ENABLE_VOICE                      No               Enable voice summary feature
-
-LOG_LEVEL                         No               Backend logging level
-
-PORT                              No               Backend server port
-
-
-Evaluation Metrics
-------------------------------------------------------------------------------------------------
-Metric                             Description
-------------------------------------------------------------------------------------------------
-Response Accuracy                  AI response correctness against source documents
-
-Citation Coverage                  Percentage of responses containing valid citations
-
-Semantic Retrieval Accuracy        Relevance of retrieved document chunks
-
-Deadline Detection Accuracy        Accuracy of extracted timelines & deadlines
-
-Hallucination Reduction            Grounded response consistency through RAG
-
-User Comprehension                 Ease of understanding generated summaries
-
-Actionability Score                Quality of extracted action items & alerts
-
-Latency Performance                Response generation speed
-
-Document Processing Accuracy       PDF/DOCX extraction quality
-
-
-Future Improvements
-------------------------------------------------------------------------------------------------
-• Multi-language civic intelligence support
-• Voice-enabled accessibility assistant
-• Live government portal ingestion
-• Real-time civic notifications
-• AI-powered policy comparison
-• WhatsApp-based citizen assistant
-• Mobile application support
-• Smart recommendation engine
-• Regional personalization
-• Advanced analytics dashboard
-• OCR support for scanned government documents
-• AI-generated visual insights & charts
+- Multi-language civic intelligence support
+- Voice-enabled accessibility assistant
+- Live government portal ingestion
+- Real-time civic notifications
+- AI-powered policy comparison
+- WhatsApp-based citizen assistant
+- Mobile application support
+- Smart recommendation engine
+- Regional personalization
+- Advanced analytics dashboard
+- OCR support for scanned government documents
+- AI-generated visual insights & charts
