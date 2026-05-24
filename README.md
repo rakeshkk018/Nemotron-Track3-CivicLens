@@ -1,6 +1,18 @@
 # Nemotron-Track3-CivicLens
 CivicLens AI — AI-powered public document explainer built with NVIDIA Nemotron 3 Super for the NVIDIA Hackathon Track 3.
 
+📖 Complete project blog:
+
+💻 Source code (GitHub):
+
+Linkedin Post:
+
+
+🎥 Full demo video
+
+
+
+
 ## PROBLEM STATEMENT
 Local government and public policy documents are officially available to citizens, but they remain difficult to understand due to their complexity and structure. Ward committee minutes, government circulars, and budget reports are often written in technical language, spread across multiple portals, and lack clear summaries for the public. As a result, citizens struggle to identify key information such as deadlines, eligibility rules, and required actions, leading to low civic participation and missed opportunities for public feedback.
 There is also no simple way for residents to interact with civic data through natural language, meaning users cannot easily ask questions and receive grounded, context-aware answers supported by actual documents. CivicLens AI bridges this gap by transforming complex civic information into simple, understandable, and interactive insights, enabling citizens to access, understand, and engage with government decisions more effectively.
