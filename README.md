@@ -5,13 +5,9 @@ CivicLens AI — AI-powered public document explainer built with NVIDIA Nemotron
 
 💻 Source code (GitHub): https://github.com/rakeshkk018/Nemotron-Track3-CivicLens.git
 
-Linkedin Post: 
+Linkedin Post: https://www.linkedin.com/posts/rakesh-kk_ai-generativeai-rag-activity-7464319562688385024-0p_j?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFoTnkQBda3oTIWAXYgj-fXt1UUgPLaYV7k
 
-Full Demo Video: https://drive.google.com/file/d/1s-XSWzuyuWBAv43SrFRWxR_BogU0pMoc/view?usp=sharing
-
-🎥 Full demo video
-
-
+🎥 Full demo video: https://drive.google.com/file/d/1s-XSWzuyuWBAv43SrFRWxR_BogU0pMoc/view?usp=sharing
 
 
 ## PROBLEM STATEMENT
